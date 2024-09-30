@@ -1,0 +1,51 @@
+﻿@model IEnumerable<e_shop.Models.Articles>
+
+
+<table class="table">
+    <th>Nom</th>
+    <th>Prix</th>
+    <th>Date</th>
+    <th>Email</th>
+   
+    @{double totalPrice = 0;}
+    
+    @foreach (var item in Model)
+    { 
+
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+        </tr>
+
+        //totalPrice = item.Price + totalPrice;
+        totalPrice += item.Price;
+        
+
+    }
+
+    <tfoot>
+        <tr>
+            <th>
+                total
+            </th>
+            <td>
+                @totalPrice.ToString("0.00")
+            </td>
+        </tr>
+    </tfoot>
+    
+</table>
+
+<a asp-action="ConclurePaiement">Payer</a>
+
+    
