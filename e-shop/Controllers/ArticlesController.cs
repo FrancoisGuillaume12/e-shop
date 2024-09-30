@@ -32,6 +32,56 @@ namespace e_shop.Controllers
             //await _context.Articles.ToListAsync()
         }
 
+        public IActionResult Create()
+        {
+            return View();
+        }
 
+        [HttpPost]
+        public IActionResult Create(Articles article)
+        {
+            List<Articles> ListArticles;
+
+            if (HttpContext.Request.Cookies["CookiesClient"] == null)
+            {
+                ListArticles = new List<Articles>();
+
+                HttpContext.Response.Cookies.Append ("CookiesClient",JsonSerializer.Serialize<List<Articles>>(ListArticles));
+            }
+
+            ListArticles = JsonSerializer.Deserialize<List<Articles>>(HttpContext.Request.Cookies["CookiesClient"]);
+
+            string nom = "Guillaume";
+
+            /*System.Collections.ArrayList listeDENimporteQuoi = new System.Collections.ArrayList();
+
+            listeDENimporteQuoi.Add("dfhjdfkjdfkdfjdfkj");
+            listeDENimporteQuoi.Add(12344545);
+            listeDENimporteQuoi.Add(article);
+
+            List <string> listeDeString = new List<string>();
+
+            List<Articles> art = new List<Articles>();
+
+            art.Add("Guillaume");
+
+            art.Add(article);
+
+
+            listeDeString.Add(1);
+            */
+
+            if (ListArticles != null)
+            {
+                ListArticles.Add(article);
+
+                HttpContext.Response.Cookies.Delete("CookiesClient");
+                HttpContext.Response.Cookies.Append("CookiesClient", JsonSerializer.Serialize<List<Articles>>(ListArticles));
+
+                return Redirect("Index");
+            }
+
+            return View();
+        }
     }
 }

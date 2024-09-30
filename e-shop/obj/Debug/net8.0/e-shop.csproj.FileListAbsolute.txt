@@ -261,3 +261,4 @@ C:\Users\guigu\source\repos\e-shop\e-shop\bin\Debug\net8.0\runtimes\win\lib\net7
 C:\Users\guigu\source\repos\e-shop\e-shop\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 C:\Users\guigu\source\repos\e-shop\e-shop\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\guigu\source\repos\e-shop\e-shop\obj\Debug\net8.0\scopedcss\projectbundle\e-shop.bundle.scp.css
+C:\Users\guigu\source\repos\e-shop\e-shop\obj\Debug\net8.0\e-shop.sourcelink.json
