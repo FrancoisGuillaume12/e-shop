@@ -51,8 +51,6 @@ namespace e_shop.Controllers
 
             ListArticles = JsonSerializer.Deserialize<List<Articles>>(HttpContext.Request.Cookies["CookiesClient"]);
 
-            string nom = "Guillaume";
-
             /*System.Collections.ArrayList listeDENimporteQuoi = new System.Collections.ArrayList();
 
             listeDENimporteQuoi.Add("dfhjdfkjdfkdfjdfkj");
@@ -82,6 +80,34 @@ namespace e_shop.Controllers
             }
 
             return View();
+        }
+
+        public ActionResult Payer() 
+        {
+            List<Articles> ListArticles = JsonSerializer.Deserialize<List<Articles>>(HttpContext.Request.Cookies["CookiesClient"]);
+
+            return View(ListArticles);
+        }
+
+        public async Task<IActionResult> ConclurePaiement([Bind("Id,IdentityUser,DateAchat,Title,Price")] Articles articles)
+        {
+
+            List<Articles> ListArticles = JsonSerializer.Deserialize<List<Articles>>(HttpContext.Request.Cookies["CookiesClient"]);
+
+            var user = await _userManager.FindByNameAsync(User.Identity.Name);
+
+            foreach (var article in ListArticles)
+            {
+                article.DateAchat = DateTime.Now;
+                article.User = user;
+                _context.Add(article);
+                await _context.SaveChangesAsync();
+            }
+            
+            ListArticles.Clear();
+            HttpContext.Response.Cookies.Delete("CookiesClient");
+            HttpContext.Response.Cookies.Append("CookiesClient", JsonSerializer.Serialize<List<Articles>>(ListArticles));
+            return Redirect("Index");
         }
     }
 }

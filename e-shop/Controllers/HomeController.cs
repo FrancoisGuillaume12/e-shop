@@ -19,7 +19,7 @@ namespace e_shop.Controllers
         {
             CookieOptions cookieOptions = new CookieOptions();
             cookieOptions.Secure = true;
-            cookieOptions.Expires = DateTime.Now.AddMinutes(5);
+            cookieOptions.Expires = DateTime.Now.AddMinutes(30);
             cookieOptions.HttpOnly = true;
 
             if (HttpContext.Request.Cookies["CookiesClient"] == null)

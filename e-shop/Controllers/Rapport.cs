@@ -7,151 +7,45 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using e_shop.Data;
 using e_shop.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace e_shop.Controllers
 {
     public class Rapport : Controller
     {
         private readonly ApplicationDbContext _context;
+        private UserManager<IdentityUser> _userManager;
 
-        public Rapport(ApplicationDbContext context)
+        public Rapport(ApplicationDbContext context, UserManager<IdentityUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         // GET: Rapport
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Articles.ToListAsync());
+            List<Articles> listeArticles = new List<Articles>();
+
+            var userRapport = await _userManager.FindByNameAsync(User.Identity.Name);
+
+            listeArticles =  _context.Articles.ToList().FindAll(articles => articles.User == userRapport);
+
+            return View(listeArticles);
         }
 
-        // GET: Rapport/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> RapportConssolider()
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            List<Articles> listeArticles = new List<Articles>();
+            var userRapport = await _userManager.FindByNameAsync(User.Identity.Name);
+            listeArticles = _context.Articles.ToList().FindAll(articles => articles.User == userRapport);
 
-            var articles = await _context.Articles
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (articles == null)
-            {
-                return NotFound();
-            }
+            //LINQ pour agrouper l'information
+            var rapportConsolide = listeArticles.GroupBy(article=> new { Mois = article.DateAchat.Value.Month, Annee = article.DateAchat.Value.Year })
+                                    .Select(consolide=> new RapportConssolider {Mois = consolide.Key.Mois.ToString("00"), Annee = consolide.Key.Annee.ToString(), TotalPrice = consolide.Sum(p=>p.Price) }).ToList();            
 
-            return View(articles);
-        }
+            return View(rapportConsolide);
 
-        // GET: Rapport/Create
-        public IActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: Rapport/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,DateAchat,Title,Price")] Articles articles)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Add(articles);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(articles);
-        }
-
-        // GET: Rapport/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var articles = await _context.Articles.FindAsync(id);
-            if (articles == null)
-            {
-                return NotFound();
-            }
-            return View(articles);
-        }
-
-        // POST: Rapport/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,DateAchat,Title,Price")] Articles articles)
-        {
-            if (id != articles.Id)
-            {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(articles);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!ArticlesExists(articles.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            return View(articles);
-        }
-
-        // GET: Rapport/Delete/5
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var articles = await _context.Articles
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (articles == null)
-            {
-                return NotFound();
-            }
-
-            return View(articles);
-        }
-
-        // POST: Rapport/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var articles = await _context.Articles.FindAsync(id);
-            if (articles != null)
-            {
-                _context.Articles.Remove(articles);
-            }
-
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
-
-        private bool ArticlesExists(int id)
-        {
-            return _context.Articles.Any(e => e.Id == id);
         }
     }
 }

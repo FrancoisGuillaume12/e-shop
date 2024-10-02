@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\guigu\\source\\repos\\e-shop\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{98C77533-A178-4C88-884E-A836FD15909B}|e-shop\\e-shop.csproj|c:\\users\\guigu\\source\\repos\\e-shop\\e-shop\\controllers\\rapport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98C77533-A178-4C88-884E-A836FD15909B}|e-shop\\e-shop.csproj|solutionrelative:e-shop\\controllers\\rapport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98C77533-A178-4C88-884E-A836FD15909B}|e-shop\\e-shop.csproj|c:\\users\\guigu\\source\\repos\\e-shop\\e-shop\\models\\rapportconssolider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98C77533-A178-4C88-884E-A836FD15909B}|e-shop\\e-shop.csproj|solutionrelative:e-shop\\models\\rapportconssolider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98C77533-A178-4C88-884E-A836FD15909B}|e-shop\\e-shop.csproj|c:\\users\\guigu\\source\\repos\\e-shop\\e-shop\\views\\rapport\\rapportconssolider.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{98C77533-A178-4C88-884E-A836FD15909B}|e-shop\\e-shop.csproj|solutionrelative:e-shop\\views\\rapport\\rapportconssolider.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{98C77533-A178-4C88-884E-A836FD15909B}|e-shop\\e-shop.csproj|c:\\users\\guigu\\source\\repos\\e-shop\\e-shop\\controllers\\articlescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98C77533-A178-4C88-884E-A836FD15909B}|e-shop\\e-shop.csproj|solutionrelative:e-shop\\controllers\\articlescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98C77533-A178-4C88-884E-A836FD15909B}|e-shop\\e-shop.csproj|c:\\users\\guigu\\source\\repos\\e-shop\\e-shop\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98C77533-A178-4C88-884E-A836FD15909B}|e-shop\\e-shop.csproj|solutionrelative:e-shop\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{98C77533-A178-4C88-884E-A836FD15909B}|e-shop\\e-shop.csproj|c:\\users\\guigu\\source\\repos\\e-shop\\e-shop\\views\\rapport\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{98C77533-A178-4C88-884E-A836FD15909B}|e-shop\\e-shop.csproj|solutionrelative:e-shop\\views\\rapport\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98C77533-A178-4C88-884E-A836FD15909B}|e-shop\\e-shop.csproj|c:\\users\\guigu\\source\\repos\\e-shop\\e-shop\\views\\articles\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{98C77533-A178-4C88-884E-A836FD15909B}|e-shop\\e-shop.csproj|solutionrelative:e-shop\\views\\articles\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{98C77533-A178-4C88-884E-A836FD15909B}|e-shop\\e-shop.csproj|c:\\users\\guigu\\source\\repos\\e-shop\\e-shop\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{98C77533-A178-4C88-884E-A836FD15909B}|e-shop\\e-shop.csproj|solutionrelative:e-shop\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98C77533-A178-4C88-884E-A836FD15909B}|e-shop\\e-shop.csproj|c:\\users\\guigu\\source\\repos\\e-shop\\e-shop\\views\\articles\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{98C77533-A178-4C88-884E-A836FD15909B}|e-shop\\e-shop.csproj|solutionrelative:e-shop\\views\\articles\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{98C77533-A178-4C88-884E-A836FD15909B}|e-shop\\e-shop.csproj|c:\\users\\guigu\\source\\repos\\e-shop\\e-shop\\models\\articles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98C77533-A178-4C88-884E-A836FD15909B}|e-shop\\e-shop.csproj|solutionrelative:e-shop\\models\\articles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,8 +37,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 382,
-          "SelectedChildIndex": 5,
+          "DockedHeight": 227,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -43,54 +55,97 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\guigu\\source\\repos\\e-shop\\e-shop\\Views\\Articles\\Index.cshtml",
-              "RelativeDocumentMoniker": "e-shop\\Views\\Articles\\Index.cshtml",
-              "ToolTip": "C:\\Users\\guigu\\source\\repos\\e-shop\\e-shop\\Views\\Articles\\Index.cshtml",
-              "RelativeToolTip": "e-shop\\Views\\Articles\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "RapportConssolider.cshtml",
+              "DocumentMoniker": "C:\\Users\\guigu\\source\\repos\\e-shop\\e-shop\\Views\\Rapport\\RapportConssolider.cshtml",
+              "RelativeDocumentMoniker": "e-shop\\Views\\Rapport\\RapportConssolider.cshtml",
+              "ToolTip": "C:\\Users\\guigu\\source\\repos\\e-shop\\e-shop\\Views\\Rapport\\RapportConssolider.cshtml",
+              "RelativeToolTip": "e-shop\\Views\\Rapport\\RapportConssolider.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-30T19:17:21.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-02T11:07:49.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\guigu\\source\\repos\\e-shop\\e-shop\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "e-shop\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\guigu\\source\\repos\\e-shop\\e-shop\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "e-shop\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACIAAAB4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-02T11:02:49.623Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\guigu\\source\\repos\\e-shop\\e-shop\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "e-shop\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\guigu\\source\\repos\\e-shop\\e-shop\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "e-shop\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAQwB4AAAAyAAAA",
+              "Title": "RapportConssolider.cs",
+              "DocumentMoniker": "C:\\Users\\guigu\\source\\repos\\e-shop\\e-shop\\Models\\RapportConssolider.cs",
+              "RelativeDocumentMoniker": "e-shop\\Models\\RapportConssolider.cs",
+              "ToolTip": "C:\\Users\\guigu\\source\\repos\\e-shop\\e-shop\\Models\\RapportConssolider.cs",
+              "RelativeToolTip": "e-shop\\Models\\RapportConssolider.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAUAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T19:12:27.894Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-02T10:39:53.519Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
+              "Title": "Articles.cs",
+              "DocumentMoniker": "C:\\Users\\guigu\\source\\repos\\e-shop\\e-shop\\Models\\Articles.cs",
+              "RelativeDocumentMoniker": "e-shop\\Models\\Articles.cs",
+              "ToolTip": "C:\\Users\\guigu\\source\\repos\\e-shop\\e-shop\\Models\\Articles.cs",
+              "RelativeToolTip": "e-shop\\Models\\Articles.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T10:36:55.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\guigu\\source\\repos\\e-shop\\e-shop\\Views\\Rapport\\Index.cshtml",
+              "RelativeDocumentMoniker": "e-shop\\Views\\Rapport\\Index.cshtml",
+              "ToolTip": "C:\\Users\\guigu\\source\\repos\\e-shop\\e-shop\\Views\\Rapport\\Index.cshtml",
+              "RelativeToolTip": "e-shop\\Views\\Rapport\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-02T10:33:49.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ArticlesController.cs",
               "DocumentMoniker": "C:\\Users\\guigu\\source\\repos\\e-shop\\e-shop\\Controllers\\ArticlesController.cs",
               "RelativeDocumentMoniker": "e-shop\\Controllers\\ArticlesController.cs",
               "ToolTip": "C:\\Users\\guigu\\source\\repos\\e-shop\\e-shop\\Controllers\\ArticlesController.cs",
               "RelativeToolTip": "e-shop\\Controllers\\ArticlesController.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAuwB0AAAAMAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T19:11:37.91Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-02T10:24:28.352Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\guigu\\source\\repos\\e-shop\\e-shop\\Views\\Articles\\Create.cshtml",
-              "RelativeDocumentMoniker": "e-shop\\Views\\Articles\\Create.cshtml",
-              "ToolTip": "C:\\Users\\guigu\\source\\repos\\e-shop\\e-shop\\Views\\Articles\\Create.cshtml",
-              "RelativeToolTip": "e-shop\\Views\\Articles\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-30T19:17:26.417Z",
+              "DocumentIndex": 0,
+              "Title": "Rapport.cs",
+              "DocumentMoniker": "C:\\Users\\guigu\\source\\repos\\e-shop\\e-shop\\Controllers\\Rapport.cs",
+              "RelativeDocumentMoniker": "e-shop\\Controllers\\Rapport.cs",
+              "ToolTip": "C:\\Users\\guigu\\source\\repos\\e-shop\\e-shop\\Controllers\\Rapport.cs",
+              "RelativeToolTip": "e-shop\\Controllers\\Rapport.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAUwDIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T08:59:06.376Z",
               "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 173,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }
